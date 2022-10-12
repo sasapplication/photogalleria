@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- custom css file link  -->
+   
+
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Alkalami', serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: all .2s linear;
+}
+
+body{
+  background-color: #fff;
+}
+
+.container{
+  padding:25px 10%;
+  text-align: center;
+}
+
+.container .heading{
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+
+.container .image-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:20px;
+  padding-top: 30px;
+}
+
+.container .image-container .image{
+  padding:15px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  border:2px solid #000;
+  width: 95%;
+  border-radius: 5px;
+  animation: fadeIn .2s linear;
+}
+
+@keyframes fadeIn {
+  0%{
+    transform: scale(.5) translateY(-10px);
+    opacity: 0;
+  }
+}
+
+.container .image-container .image img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.container .image-container .image h3{
+  font-size: 20px;
+}
+
+@media (max-width:768px){
+  .container #search-box{
+    width: 100%;
+  }
+}
+
+@media (max-width:850px){
+
+  .container{
+    padding:25px 20px;
+  }
+
+  .container .image-container .image{
+    width: 100%;
+  }
+}
+</style>
+<body>
+   
+<div class="container">
+
+   <h1 class="heading">PHOTO GALLERY</h1>
+
+   
+
+   <div class="image-container">
+
+      <div class="image">
+         <h3>aditya</h3>
+         <img src="http://drive.google.com/uc?export=view&id=1QGOxUJCnc8IDERsunmQhoL2Ursx3X6Cm">
+      
+        
+      </div>
+
+      <div class="image">
+         <h3>acc</h3>
+         <img src="images/car-1.jpg">
+         <img src="gallery/drm_1.jpg">
+        
+      </div>
+
+      <div class="image" data-title="food">
+         <h3>hmm</h3>
+         <img src="images/food-1.jpg" alt="">
+         
+      </div>
+
+      <div class="image" data-title="city">
+         <img src="images/city-1.jpg" alt="">
+         <img src="images/city-1.jpg" alt="">
+         <h3>huge city</h3>
+      </div>
+
+      <div class="image" data-title="food">
+         <img src="images/food-2.jpg" alt="">
+         <h3>tasty food</h3>
+      </div>
+
+      <div class="image" data-title="car">
+         <img src="images/car-2.jpg" alt="">
+         <h3>modern car</h3>
+      </div>
+
+      <div class="image" data-title="cute">
+         <img src="images/cute-2.jpg" alt="">
+         <h3>cute animal</h3>
+      </div>
+
+      <div class="image" data-title="food">
+         <img src="images/food-3.jpg" alt="">
+         <h3>tasty food</h3>
+      </div>
+
+      <div class="image" data-title="cute">
+         <img src="images/cute-3.jpg" alt="">
+         <h3>cute animal</h3>
+      </div>
+
+   </div>
+
+</div>
+
+
+
+</body>
+</html>
